@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take time to compleate this short survey</p>
+    <p />
+    <form id="survey-form" method="post" action="#">
+      <fieldset>
+        <label id="name-label"
+          >Name
+          <input type="text" id="name" required placeholder="Enter your Name" />
+        </label>
+
+        <label id="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your Email"
+        /></label>
+
+        <label id="number-label"
+          >Age
+          <input
+            type="number"
+            id="number"
+            pattern="[1-99]{2,}"
+            min="1"
+            max="100"
+            required
+            placeholder="Enter your Age"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          What is your current role
+          <select id="dropdown">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Staff</option></select
+          ><br />
+        </label>
+
+        <label>How did you hear about us </label>
+
+        <label
+          ><input
+            type="radio"
+            name="radio"
+            value="Websites"
+            class="inline"
+          />Websites</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="radio"
+            value="New papers"
+            class="inline"
+          />New papers</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="radio"
+            value="ob boards"
+            class="inline"
+          />Job boards</label
+        >
+        <br />
+      </fieldset>
+      <fieldset>
+        <label>Which courses do you take</label>
+        <label
+          ><input type="checkbox"/value="checkbox" class="inline">BBIT</label
+        >
+        <label
+          ><input type="checkbox"/value="checkbox" class="inline">BBM</label
+        >
+        <label
+          ><input type="checkbox"/value="checkbox" class="inline">DICT</label
+        >
+      </fieldset>
+      <fieldset>
+        <label
+          >Enter comments
+          <textarea placeholder="Enter comments here"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
